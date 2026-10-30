@@ -5,22 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VÉRITÉ HORLOGERIE</title>
     <link rel = "icon" type = "image/.icon" href="./fotos/verite_logo_solo (Copiar).png">
+    <link rel="stylesheet" href="styles.css">
 
-    <h1> <link rel="stylesheet" href="./fotos/verite_logo+nombre.png"></h1>
+    <header class="encabezado">
+    <h1 class="logo"> <link rel="stylesheet" href="./fotos/verite_logo+nombre.png"></h1>
 
-    <ul>
-        <li><a href="inicio">INICIO</a></li>
-        <li><a href="colection">COLECCION</a></li>
-        <li><a href="sobreNosotros">SOBRE NOSOTROS</a></li>
-        <li><a href="contactanos">CONTACTO</a></li>
-        <li><a href="LogIn.html"><button>LogIn</button></a></li>
+    <ul class="menu">
+        <li><a href="#inicio">INICIO</a></li>
+        <li><a href="#colection">COLECCION</a></li>
+        <li><a href="#sobreNosotros">SOBRE NOSOTROS</a></li>
+        <li><a href="#contactanos">CONTACTO</a></li>
+        <li><a href="LogIn.html"><button class="boton">LogIn</button></a></li>
     </ul>
+    </header>
 
 
 </head>
 <body> 
     <main> 
-        <section id = "inicio"> 
+        <section id = "inicio" class="seccion"> 
             <H2>
                 VERIE HORLOGERIE
             </H2>
@@ -39,9 +42,11 @@
             </P>
 
         </section>
-        <section id = "colection">
+        <section id = "colection" class="seccion">
             <h2>Mira nuestra coleccion de relojes de alta gama</h2>
                 <br>
+            <div class="contenedor-tarjetas">
+                <div class="tarjeta">
                     <h3>Aurelius Noir</h3>
                         <img src="./fotos/relojAurelius Noir.png" alt="Imagen del reloj Aurelius Noir">
                             <h4>Especificaciones:</h4>
@@ -49,7 +54,10 @@
                                     Tiene cristal de zafiro con tratamiento antirreflejo, esfera negrwa con acabado sunburst y correa de cuero negro. Incluye funciones de horas, minutos, segundos y fecha. Ofrece una resistencia al agua de hasta 50 metros y un peso aproximado de 92 gramos.
                                     Precio ficticio: USD 12.900.
                                 </p>
+                    <a class="boton" href="#contactanos">Consultar</a>
+                </div>
                 <br>
+                <div class="tarjeta">
                     <H3>Chronos Azure GT</H3>
                         <img src="./fotos/relojChronosAzureGT.png" alt="Imagen del reloj Chronos Azure GT">
                             <h4>Especificaciones:</h4>
@@ -58,7 +66,10 @@
                                     Cuenta con brazalete de acero inoxidable y funciones de horas, minutos, segundos, cronografo y taquimetro. Tiene una resistencia al agua de hasta 150 metros y un peso aproximado de 178 gramos.
                                     Precio ficticio: USD 9.800.
                                 </p>
+                    <a class="boton" href="#contactanos">Consultar</a>
+                </div>
                 <br>
+                <div class="tarjeta">
                     <h3>Eclat Skeleton 01</h3>
                         <img src="./fotos/Eclat Skeleton01.png" alt="Imagen del reloj Eclat Skeleton 01">
                             <h4>Especificaciones:</h4>
@@ -68,12 +79,15 @@
                                     Se trataria de una edicion limitada a 250 unidades.
                                     Precio ficticio: USD 24.500.
                                 </p>
+                    <a class="boton" href="#contactanos">Consultar</a>
+                </div>
+            </div>
                 <br>
-            <a href="https://www.rolex.com/es-ar/watches/new-watches">Mira nuestros nuevos ingresos</a>
+            <a class="enlace" href="https://www.rolex.com/es-ar/watches/new-watches">Mira nuestros nuevos ingresos</a>
                 <br>
         </section>
 
-        <section id = "sobreNosotros">
+        <section id = "sobreNosotros" class="seccion">
             <h2>Sobre nosotros</h2>
                 <br>
                     <p>Somos una relojeria que se encarga de buscar los mejores relojes en los mejores estados para que nuestros
@@ -83,18 +97,18 @@
                 <br>
         </section>
 
-        <section id = "contactanos">
+        <section id = "contactanos" class="seccion">
             <h2>Contactanos</h2>
                 <h3>Whatsapp</h3>
                     <p>+54 9 11 1111-1111</p>
                         <br>
                 <h3>Mail</h3>
-                    <a href="mailto: veritehorlogerie@gmail.com">Contactanos al gmail</a>
+                    <a class="enlace" href="mailto: veritehorlogerie@gmail.com">Contactanos al gmail</a>
                         <br>
         </section>
     </main>
 
-    <footer>
+    <footer class="pie">
         <p>Juan Marinelli / 3CSTC / 5TO / Los mejores relojes y tu confianza, en las mejores manos</p>
     </footer>
 </body>
