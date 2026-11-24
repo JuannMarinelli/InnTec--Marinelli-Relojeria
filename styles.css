@@ -75,13 +75,14 @@ li {
 }
 
 .logo {
+    margin: 0;
+}
+
+.logo img {
+    display: block;
     width: 200px;
     height: 90px;
-    margin: 0;
-    background-image: url("./fotos/verite_logo_iz_nombre_der.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    object-fit: contain;
 }
 
 .menu {
@@ -139,11 +140,27 @@ li {
 }
 
 .tarjeta {
+    display: flex;
+    flex-direction: column;
     padding: var(--espacio-medio);
     margin-bottom: var(--espacio-grande);
     background-color: var(--color-secundario);
     border: 1px solid var(--color-principal);
     border-radius: 8px;
+}
+
+.tarjeta .boton {
+    align-self: center;
+    margin-top: auto;
+}
+
+.precio {
+    color: var(--color-principal-claro);
+    font-weight: bold;
+}
+
+.centrado {
+    text-align: center;
 }
 
 .tarjeta:hover {
